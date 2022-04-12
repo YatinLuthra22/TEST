@@ -2,7 +2,7 @@
 
 
 
-    //variables for date insert 
+    //variables for date Insert 
     $name = $_POST['name'];
     $email = $_POST['email'];
     $username = $_POST['username'];
