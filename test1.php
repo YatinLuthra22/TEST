@@ -1,5 +1,15 @@
 <?php
 
+
+
+    //variables for date insert 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $contact = $_POST['contact'];
+    $gender = $_POST['gender'];
+    $marks = $_POST["marks"];   
       $data = array($_POST["name"], $_POST["email"], $_POST["username"], $_POST["password"], $_POST["contact"], $_POST["gender"], $_POST["marks"], $_POST["comment"]);
     $nameerr = $emailerr = $usernameerr = $passworderr = $contacterr = $gendererr = $markserr = "";
     
@@ -20,34 +30,34 @@
         echo "Your email is :";
         echo  test_input($data[1]);
     }
-    if (empty($data[2])) {
+    if (empty($username)) {
         $usernameerr = "Username is Required";
     } else {
         echo "<br>";
         echo "Your username is :";
         echo  test_input($data[2]);
     }
-    if (empty($data[3])) {
+    if (empty($password)) {
         $passworderr = "Password is Required";
     } else {
         echo "<br>";
         echo "Your password is :";
         echo   $data[3];
     }
-    if (empty($data[4])) {
+    if (empty($contact)) {
         $contacterr = "Contact is Required";
     } else {
         echo "<br>";
         echo "Your contact is :";
         echo  test_input($data[4]);
     }
-    if (empty($data[5])) {
+    if (empty($gender)) {
         $gendererr = "Gender is Required";
     } else {
         echo "<br>";
         echo "Your gender is $data[5]";
     }
-    if (empty($data[6])) {
+    if (empty($marks)) {
         $markserr = "Marks are Required";
     } else {
         echo "<br>";
