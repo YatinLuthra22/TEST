@@ -1,5 +1,5 @@
 <?php
-
+//This the change
 $completed = true; //Bool
 $score = 75; //Integer
 $price = 0.99; //Flaot
